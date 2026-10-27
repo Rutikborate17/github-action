@@ -14,3 +14,9 @@ jobs:
 
       - name: say hello to user name
         run: echo "helo to $USER"
+  details:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: version of python and docker
+        run: docker --version && python --version
+        
